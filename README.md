@@ -2,7 +2,7 @@
 API to access public Hugging Face US Amazon Review Dataset using Django framework
 The API is currently hosted on an EC2 Instance and using Hugging Face's first row API 
 
-* Django is a Python web framework that is comprehensive and secure. I choose it because it scales for large applications
+* Django is a Python web framework that is comprehensive and secure. I choose it because it scales for large applications. Python is my preferred language so I choose it for this project. Additionally, Python's readibility, large community, and valuable, useful libraries made it the most appealing choice in lieu of Rust, C#/Java, or JavaScript.
 * EC2 allows users to easily upload their web applications to the cloud. I have used an elastic IP address to make the server public. I used an EC2 instance for ease of use for the purposes of this assignment
 * NGINX and Gunicorn are used as the web server for the Django app. I choose these technologies because they tend to perform best in production (as opposed to Apache) and are more secure.
 * Pandas, Textblob, JSON, Requests libraries were used to query, filter, process and return json data as HTTP response. 

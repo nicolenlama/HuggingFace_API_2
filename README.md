@@ -16,7 +16,7 @@ The API is currently hosted on an EC2 Instance and using Hugging Face's first ro
 Use the Hugging Face Amazon US API to look up reviews by keyword. You can refine your search using filters and facets.
 Must specify category in the URL. Limit results with limit parameter
 
-Example Call
+*Example Call*
 
 Get Tool reviews with "good" and their aggregated sentiment score, and limit 10 results
 `http://3.233.212.196/hf_api/api/search/v1/data.json?q=good&category=Tools&limit=10&facet=avg&facet=sentiment&api-key=test17502104bl3k2`
@@ -112,7 +112,7 @@ Query with aggregates average and sentiment:
 
 By default facet counts ignore all filters and return the count for all results of a query. 
 
-Here is the facet array response to the query.
+**Here is the facet array response to the query.**
 ```json
 {'aggregate': {'average': star_rating          2.000000
 helpful_votes        0.166667
@@ -136,7 +136,7 @@ Examples Requests
       
 `https://<ec_instance_ip>/hf_api/api/search/v1/data.json?category=Automotive&facet=avg&facet=max&facet=min&facet=sentiment&starRating=4&api-key={my_token}`
 
-Example Response
+**Example Response**
 Here is an partial example response.
 
 ```json

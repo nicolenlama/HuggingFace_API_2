@@ -2,7 +2,7 @@
 API to access public Hugging Face US Amazon Review Dataset using Django framework
 The API is currently hosted on an EC2 Instance and using Hugging Face's first row API 
 
-* Django is a Python web framework that is comprehensive and secure. I choose it because it scales to large scale applications
+* Django is a Python web framework that is comprehensive and secure. I choose it because it scales for large applications
 * EC2 allows users to easily upload their web applications to the cloud. I have used an elastic IP address to make the server public
 * Pandas, Textblob, JSON, Requests libraries were used to filter, process and return json data as HTTP response. 
 * Please visit the todo list below to see how I would improve this API. 

@@ -110,7 +110,7 @@ Query with aggregates average and sentiment:
 By default facet counts ignore all filters and return the count for all results of a query. 
 
 Here is the facet array response to the query.
-
+```json
 {'aggregate': {'average': star_rating          2.000000
 helpful_votes        0.166667
 total_votes          0.500000
@@ -128,6 +128,7 @@ vine                 0.0
 verified_purchase    0.0
 , 'sentimentScore': -0.06798941798941802}
       ...
+```
 Examples Requests
       
 `https://<ec_instance_ip>/hf_api/api/search/v1/data.json?category=Automotive&facet=avg&facet=max&facet=min&facet=sentiment&starRating=4&api-key={my_token}`
@@ -135,6 +136,7 @@ Examples Requests
 Example Response
 Here is an partial example response.
 
+```json
 {
    "aggregate":{
       "average":"star_rating          2.000000
@@ -179,6 +181,7 @@ Name":"min",
          "review_date":"Timestamp(""2015-08-31 00:00:00"")"
       },
               ...
+```
 Limit Fields in Response
 You can limit the number fields returned in the response with the limit parameter.
 

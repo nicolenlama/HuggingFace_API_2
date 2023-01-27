@@ -4,7 +4,7 @@ The API is currently hosted on an EC2 Instance and using Hugging Face's first ro
 
 * Django is a Python web framework that is comprehensive and secure. I choose it because it scales for large applications
 * EC2 allows users to easily upload their web applications to the cloud. I have used an elastic IP address to make the server public. I used an EC2 instance for ease of use for the purposes of this assignment
-* Pandas, Textblob, JSON, Requests libraries were used to filter, process and return json data as HTTP response. 
+* Pandas, Textblob, JSON, Requests libraries were used to query, filter, process and return json data as HTTP response. 
 * Please visit the todo list below to see how I would improve this API. 
 
 *Note: For now, please use token test17502104bl3k2*

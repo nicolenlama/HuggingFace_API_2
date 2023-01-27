@@ -216,6 +216,6 @@ Search Hugging Face US Amazon Review Data Set by keywords and filters.
 * Increase EC2 instance resources
 * Add load balancer to account for increases in API calls
 * Add API call limit. for example: 10 queries per second
-      
+* Add a front page for API      
       
 

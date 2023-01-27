@@ -10,11 +10,6 @@ The API is currently hosted on an EC2 Instance and using Hugging Face's first ro
 # Review Search
 ## Overview
 
-PATHS
-/reviewData.json
-GET
-COMPONENTS
-
 Use the Hugging Face Amazon US API to look up reviews by keyword. You can refine your search using filters and facets.
 Must specify category in the URL. Limit results with limit parameter
 

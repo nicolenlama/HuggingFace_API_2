@@ -217,5 +217,6 @@ Search Hugging Face US Amazon Review Data Set by keywords and filters.
 * Add load balancer to account for increases in API calls
 * Add API call limit. for example: 10 queries per second
 * Add a front page for API      
+* Better security protocols for EC2 instance and NGINX/Gunicorn
       
 

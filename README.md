@@ -1,4 +1,4 @@
-# HuggingFace_API
+# Hugging Face API for US Amazon Reviews
 API to access public Hugging Face US Amazon Review Dataset using Django framework
 The API is currently hosted on an EC2 Instance and using Hugging Face's first row API 
 

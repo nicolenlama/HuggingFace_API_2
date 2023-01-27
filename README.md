@@ -7,6 +7,8 @@ The API is currently hosted on an EC2 Instance and using Hugging Face's first ro
 * Pandas, Textblob, JSON, Requests libraries were used to filter, process and return json data as HTTP response. 
 * Please visit the todo list below to see how I would improve this API. 
 
+*Note: For now, please use token test17502104bl3k2*
+
 # Review Search
 ## Overview
 
@@ -16,7 +18,7 @@ Must specify category in the URL. Limit results with limit parameter
 Example Call
 
 Get Tool reviews with "good" and their aggregated sentiment score, and limit 10 results
-`http://127.0.0.1:8000/hf_api/api/search/v1/data.json?q=good&category=Tools&limit=10&facet=sentiment&api-key={my_token}`
+`http://3.233.212.196/hf_api/api/search/v1/data.json?q=good&category=Tools&limit=10&facet=avg&facet=sentiment&api-key=test17502104bl3k2`
 
 
 **Categories**
@@ -85,11 +87,11 @@ Filter Query Parameters
 
 Example call querying for Beauty reviews with "hair" and startdate 2015-03-31 and limit 2 results
 
-`http://127.0.0.1:8000/hf_api/api/search/v1/data.json?q=hair&category=Beauty&startDate=2015-03-31&limit=2&api-key={token}`
+`http://3.233.212.196/hf_api/api/search/v1/data.json?q=hair&category=Beauty&startDate=2015-03-31&limit=2&api-key={token}`
 
 Example call for Furniture reviews with the word "nice" in them and a star rating of 4
 
-`http://127.0.0.1:8000/hf_api/api/search/v1/data.json?q=nice&category=Furniture&starRating=4&api-key={token}`
+`http://3.233.212.196/hf_api/api/search/v1/data.json?q=nice&category=Furniture&starRating=4&api-key={token}`
 
 
 USING FACETS
@@ -105,7 +107,7 @@ Specify facets using the facet parameter. Set facet=<field> and the response wil
 
 Query with aggregates average and sentiment:
 
-`https://<ec_instance_ip>/hf_api/api/search/v1/data.json?category=Health_Personal_Care&facet=avg&facet=sentiment&api-key={my_token}`
+`http://3.233.212.196/hf_api/api/search/v1/data.json?category=Health_Personal_Care&facet=avg&facet=sentiment&api-key={my_token}`
 
 By default facet counts ignore all filters and return the count for all results of a query. 
 
